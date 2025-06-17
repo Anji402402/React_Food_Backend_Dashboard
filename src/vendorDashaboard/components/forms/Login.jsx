@@ -1,12 +1,10 @@
 import React ,{useState}from 'react'
 import { API_URL } from "../../data/apiPath";
-//import {Await} from 'react-router-dom';
+import {Await} from 'react-router-dom';
 
 const Login = ({showWelcomeHandler}) => {
   const [email,setEmail] = useState("");
   const [password,setPassword] = useState("");
-  const [loading, setLoading] = useState(false); 
-  const [showPassword, setShowPassword] = useState(false)
 
   const loginHandler = async(e)=>{
     e.preventDefault();
